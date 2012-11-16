@@ -1,4 +1,3 @@
-
 /**
  * @name app config for Nodejs framework
  * @version undefined
@@ -61,6 +60,18 @@ exports.cache = 'cache';
 exports.logPath = 'log';
 
 /**
+ * Default style hosts
+ * @const
+ */
+exports.cssHost = '';
+
+/**
+ * Default style path
+ * @const
+ */
+exports.cssPath = 'css';
+
+/**
  * Default enable access log
  * @const
  */
@@ -70,7 +81,7 @@ exports.enableAccessLog = true;
  * Default mineType
  * @const
  */
-exports.mineType = 'text/javascript';
+exports.mineType = 'text/css';
 
 /**
  * Default transfer Encoding
@@ -100,4 +111,4 @@ exports.maxAge = 60*60*24*365;
  * Default except -> uglify object property
  * @const
  */
-exports.except = ['J','eval'];
+exports.except = ['#'];

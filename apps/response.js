@@ -33,7 +33,7 @@ var Response = exports.Response = function(response) {
      * Default mine type
      * @const
      */
-    this.defMineType = conf.mineType || 'text/javascript';
+    this.defMineType = conf.mineType || 'text/css';
 
     /**
      * Sets enable gzip

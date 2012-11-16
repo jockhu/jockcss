@@ -8,8 +8,7 @@ var conf = require("../conf/config"),
     Router = require("./router").Router,
     Fs = require("fs"),
     Path = require("path"),
-    Log = require("./log").Log,
-    uglify = require("uglify-js");
+    Log = require("./log").Log;
 
 /**
  * Resource(request, response)
@@ -92,6 +91,7 @@ var Resource = exports.Resource = function(request, response) {
 Resource.prototype.init = function() {
     this.router = new Router(this.req, this.res);
     this.urlPath = this.getPath().slice(1); // remove '/'
+    this.cssPath = conf.cssPath ? conf.cssPath + '/' : '';
     this.loadUrlInfos(this.urlPath);
 }
 /**
@@ -104,10 +104,11 @@ Resource.prototype.init = function() {
 Resource.prototype.loadUrlInfos = function(path) {
     var modules = [];
     modules = path.split(this.regModule);
-	this.releaseVersion = modules.pop().replace(/\.js.*/gi,''); // remove last item and building release versions
-    this.releaseVersion = /^\d+$/.test(this.releaseVersion) ? parseInt(this.releaseVersion+this.releaseVersion).toString(36) : this.releaseVersion;
+	this.releaseVersion = modules.pop().replace(/\.css.*/gi,''); // remove last item and building release versions
+    this.cssPath && modules.splice(0,1);
     this.mods = modules;
 }
+
 /**
  *
  * Resource.compress(buf)
@@ -119,27 +120,13 @@ Resource.prototype.loadUrlInfos = function(path) {
 Resource.prototype.compress = function(buf) {
     if(this.enableCompress){
         Log.log('Compress enabled.');
-        var final_code = '';
-        try{
-            var jsp = uglify.parser, pro = uglify.uglify;
-            var ast = jsp.parse(buf); // parse code and get the initial AST
-            ast = pro.ast_mangle(ast,{
-                //toplevel: true,
-                except: conf.except
-	            //defines:false
-            }); // get a new AST with mangled names
-            ast = pro.ast_squeeze(ast); //  get an AST with compression optimizations
-            final_code = pro.gen_code(ast,{
-                //quote_keys: true,
-	            //beautify:true,
-                ascii_only: true
-            }); // compressed code here
-        }catch(e){
-            final_code = buf;
-	        Log.log(e.toString());
-            Log.error('Call compress:' + e.toString() + this.referer);
-        }
-        return final_code;
+        return buf.replace(/\n/g,'').
+            replace(/\/\*[^\/]*\*\//g,'').
+            replace(/\s*{\s*/g,'{').
+            replace(/\s*}\s*/g,'}').
+            replace(/\s*:\s*/g,':').
+            replace(/\s*;\s*/g,';').
+            replace(/;}\s*/g,'}');
     }else return buf;
 }
 /**
@@ -197,9 +184,8 @@ Resource.prototype.existsModules = function(module) {
  *
  */
 Resource.prototype.getResource = function() {
-    var path = this.getRealCacheFilePath(), cacheFile = path + '/' + this.urlPath.replace(this.regModule,'_'), result = '', expires = new Date();
+    var path = this.getRealCacheFilePath(), cacheFile = path + '/' + this.mods.join(',')+'.css', result = '', expires = new Date();
     Log.access(this.req.url + this.referer);
-
 
     if(this.mods.length === 0) return '';
 
@@ -263,7 +249,7 @@ Resource.prototype.loadResource = function(modules) {
         if(1 == requrieType) // module
             resFiles.push(this.loadFiles(modules[i]));
         else if(2 == requrieType) // property
-            resFiles.push(this.loadFile( this.getRealFilePath( this.stringToPath(modules[i]) ) + '.js' ));
+            resFiles.push(this.loadFile( this.getRealFilePath( this.stringToPath(modules[i]) ) + '.css' ));
 
     }
 
@@ -280,7 +266,7 @@ Resource.prototype.loadResource = function(modules) {
  *
  */
 Resource.prototype.loadFiles = function(module) {
-    if(this.existsModules(module)) return;
+    if(this.existsModules(module)) return 0;
     var moduleContent = this.readFiles(this.getRealFilePath(module), module);
     this.addModules(module);
     return moduleContent;
@@ -295,7 +281,7 @@ Resource.prototype.loadFiles = function(module) {
  *
  */
 Resource.prototype.readFiles = function(path, module) {
-    var files = [], moduleJs = module+'.js', idx = 0, list = [];
+    var files = [], moduleJs = module+'.css', idx = 0, list = [];
     Log.log('readFiles -> path',path)
     try{
         files = Fs.readdirSync(path);
@@ -332,14 +318,11 @@ Resource.prototype.readFiles = function(path, module) {
  *
  */
 Resource.prototype.loadFile = function(file) {
-    var content = [], fileContent = '', newModules = [], module = this.pathToString(file); // as dom.get
-    if(this.existsModules(module)) return;
+    var content = [], fileContent = '', newModules, module = this.pathToString(file); // as dom.get
+    if(this.existsModules(module)) return 0;
     try{
         fileContent = Fs.readFileSync(file).toString();
         this.addModules(module);
-	    if('base.base' === module){
-		    fileContent = fileContent.replace('__HOST__', this.getHost() ).replace('__VERSION__', this.getReleaseVersion())
-	    }
         Log.log('load file:',file);
     }catch(e){
         Log.error('Call loadFiles: readFileSync Error, File: ' + file +' ' + e.toString() + this.referer)
@@ -363,7 +346,7 @@ Resource.prototype.loadFile = function(file) {
  *
  */
 Resource.prototype.getFileFromRequire = function(content) {
-    var modules = [];
+    var modules = [],result;
     while((result = this.regRequire.exec(content)) != null){
         if(!this.existsModules(result[1]))
             modules.push(result[1]);
@@ -392,7 +375,7 @@ Resource.prototype.getRequireType = function(reqString) {
  *
  */
 Resource.prototype.pathToString = function(reqString) {
-    return reqString.replace(this.router.getLibsFilePath()+'/', '').replace(/\//g, '.').replace(/\.js/gi,'');
+    return reqString.replace(this.router.getLibsFilePath()+'/', '').replace(/\//g, '.').replace(/\.css/gi,'');
 }
 /**
  *

@@ -1,0 +1,21 @@
+/* Autocomplete Component */
+.autocomplete_def {
+    border: 1px solid #ddd;
+    border-top: 0;
+    background: #FFF;
+    cursor: pointer;
+    text-align: left;
+    overflow: hidden;
+}
+
+.autocomplete_def .ui_sel {
+    background: #FFFFBB;
+}
+
+.autocomplete_def .ui_item {
+    border-top: 1px solid #ddd;
+    padding: 5px 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    font-size: 13px
+}

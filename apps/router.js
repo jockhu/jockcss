@@ -151,5 +151,5 @@ Router.prototype.getCacheFilePath = function(){
  *
  */
 Router.prototype.getLogFilePath = function(){
-    return conf.cache;
+    return conf.logPath;
 }
