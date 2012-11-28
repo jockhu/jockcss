@@ -21,19 +21,19 @@
  * Default port
  * @const
  */
-exports.port = process.argv[2] || 8000;
+exports.port = process.argv[2] || 8089;
 
 /**
  * Default debug
  * @const
  */
-exports.debug = process.argv[3] == 'true' || false;
+exports.debug = (process.argv[3] != undefined) ? process.argv[3] : false;
 
 /**
  * Default enable compression
  * @const
  */
-exports.enableCompress = process.argv[4] == 'true' || false;
+exports.enableCompress = (process.argv[4] != undefined) ? process.argv[4] : true;
 
 /**
  * Default version
