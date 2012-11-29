@@ -8,7 +8,9 @@ var conf = require("../conf/config"),
     Router = require("./router").Router,
     Fs = require("fs"),
     Path = require("path"),
-    Log = require("./log").Log;
+    Log = require("./log").Log,
+    Utils = require("./utils");
+    try{Utils.extend(conf, require('cssConfig'))}catch(e){}
 
 /**
  * Resource(request, response)
