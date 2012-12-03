@@ -186,7 +186,7 @@ Resource.prototype.existsModules = function(module) {
  *
  */
 Resource.prototype.getResource = function() {
-    var path = this.getRealCacheFilePath(), cacheFile = path + '/' + this.mods.join(',')+'.css', result = '', expires = new Date();
+    var path = this.getRealCacheFilePath(), cacheFile = path + '/' + this.mods.join('|')+'.css', result = '', expires = new Date();
     Log.access(this.req.url + this.referer);
 
     if(this.mods.length === 0) return '';
