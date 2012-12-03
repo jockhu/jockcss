@@ -3,11 +3,11 @@
  * resource.js
  *
  */
+(function(){
 
 var conf = require("../conf/config"),
     Router = require("./router").Router,
     Fs = require("fs"),
-    Path = require("path"),
     Log = require("./log").Log,
     Utils = require("./utils");
     try{Utils.extend(conf, require('cssConfig'))}catch(e){}
@@ -223,7 +223,7 @@ Resource.prototype.getResource = function() {
             }
         }
     };
-
+    
     this.res.setHeader("ETag", expires.getTime().toString(36));
     this.res.setHeader("Last-Modified", expires.toUTCString());
     expires.setTime(expires.getTime() + (conf.maxAge * 10000));
@@ -268,7 +268,7 @@ Resource.prototype.loadResource = function(modules) {
  *
  */
 Resource.prototype.loadFiles = function(module) {
-    if(this.existsModules(module)) return 0;
+    if(this.existsModules(module)) return '';
     var moduleContent = this.readFiles(this.getRealFilePath(module), module);
     this.addModules(module);
     return moduleContent;
@@ -320,8 +320,8 @@ Resource.prototype.readFiles = function(path, module) {
  *
  */
 Resource.prototype.loadFile = function(file) {
-    var content = [], fileContent = '', newModules, module = this.pathToString(file); // as dom.get
-    if(this.existsModules(module)) return 0;
+    var content = [], fileContent = '', newModules = [], module = this.pathToString(file); // as dom.get
+    if(this.existsModules(module)) return '';
     try{
         fileContent = Fs.readFileSync(file).toString();
         this.addModules(module);
@@ -457,3 +457,5 @@ Resource.prototype.getRealCacheFilePath = function() {
 Resource.prototype.getReleaseVersion = function() {
 	return conf.version || this.releaseVersion;
 }
+
+})();

@@ -63,33 +63,8 @@ var Router = exports.Router = function(request, response) {
      * @const
      */
 
-    this.init();
 };
 
-/**
- *
- * Router.init()
- *
- * Router initialize.
- *
- */
-Router.prototype.init = function(){
-    this.fixParentPath();
-}
-
-
-/**
- *
- * Router.init()
- *
- * Fix parent path
- *
- */
-Router.prototype.fixParentPath = function(){
-    if ("/" === this.pathName.slice(-1)) {
-        this.res.err404();
-    }
-}
 
 /**
  *
