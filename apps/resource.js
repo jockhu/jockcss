@@ -314,7 +314,7 @@ Resource.prototype.readFiles = function(path, module) {
     files.sort();
     files.unshift(moduleJs);
 
-    
+
     for(var i=0; i<files.length; i++){
         list.push(this.loadFile(path +'/'+ files[i]));
     }
