@@ -29,6 +29,9 @@
     border-radius: 5px;
     box-shadow: 0 0 3px #999;
 }
+.panel_def_fixed{
+    position: fixed;
+}
 .panel_def_mask{
     box-shadow: 0 0 3px #333;
     border-bottom: 0;
@@ -108,6 +111,10 @@
 
 .panel_def_ok:link, .panel_def_ok:visited {
     color: #b32929
+}
+
+.panel_def_ok_disable:link, .panel_def_ok_disable:visited, .panel_def_ok_disable:hover {
+    color: #999 !important;
 }
 
 .panel_def_ok:hover {
