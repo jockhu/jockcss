@@ -123,7 +123,7 @@ Resource.prototype.compress = function(buf) {
     if(this.enableCompress){
         Log.log('Compress enabled.');
         return buf.replace(/\n/g,'').
-            replace(/\/\*[^\/]*\*\//g,'').
+            replace(/\/\*.*?\*\//g,'').
             replace(/\s*{\s*/g,'{').
             replace(/\s*}\s*/g,'}').
             replace(/\s*:\s*/g,':').
