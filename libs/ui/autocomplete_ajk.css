@@ -1,0 +1,29 @@
+/**
+ * Aifang Css Framework.
+ * Copyright 2012 ANJUKE Inc. All rights reserved.
+ *
+ * @path: ui/autocomplete_def.css
+ * @author: Jock
+ * @version: 1.0.0
+ * @date: 2012/10/11
+ *
+ */
+.autocomplete_ajk {
+    border: 1px solid #999;
+    border-top: 0;
+    background: #FFF;
+    cursor: pointer;
+    text-align: left;
+    overflow: hidden;
+}
+
+.autocomplete_ajk .ui_sel {
+    background: #c8e3fc;
+}
+
+.autocomplete_ajk .ui_item {
+    padding: 5px 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    font-size: 13px
+}

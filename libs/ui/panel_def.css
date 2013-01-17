@@ -9,13 +9,13 @@
  *
  */
 .panel_modal{
-    background: #fff;
     filter:Alpha(Opacity=0);
+    background: #fff;
     opacity:0
 }
 .panel_modal_mask{
-    background: #000;
     filter:Alpha(Opacity=30);
+    background: #111;
     opacity:0.4
 }
 .panel_def {
@@ -84,8 +84,7 @@
     clear: both;
     text-align: center;
     height: 43px;
-    line-height: 43px;
-    padding: 4px 0;
+    padding-top: 8px;
     border-top: 1px solid #fbfbfb;
     border-radius: 0 0 5px 5px;
     background: #f3f3f3;
@@ -118,5 +117,5 @@
 }
 
 .panel_def_ok:hover {
-    color:#000;
+    color:#111;
 }
