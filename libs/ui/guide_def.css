@@ -28,6 +28,11 @@
     width: 100%;
     height: 100%;
 }
+
+.guide_fst_bg{
+    position: absolute;
+    overflow: hidden;
+}
 .guide_fix_bg, .guide_main_img{
     position: absolute;
     display: inline-block;
