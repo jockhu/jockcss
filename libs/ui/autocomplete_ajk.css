@@ -27,3 +27,7 @@
     overflow: hidden;
     font-size: 13px
 }
+
+.autocomplete_ajk .ui_item em{
+    font-weight: 700;
+}
