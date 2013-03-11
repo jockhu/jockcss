@@ -1,0 +1,46 @@
+/**
+ * Aifang Css Framework.
+ * Copyright 2012 ANJUKE Inc. All rights reserved.
+ *
+ * @path: ui/panel_def.css
+ * @author: Jock
+ * @version: 1.0.0
+ * @date: 2012/12/05
+ *
+ */
+.validate_def .v_tooltip{
+    background: url("http://pages.jockhu.dev.aifcdn.com/img/afui/validate/1/icon.png") no-repeat 8px 50px #FFEAEA;
+    display: none;
+    line-height: 33px;
+    height: 33px;
+    margin-left: 10px;
+    vertical-align: top;
+    padding: 0 10px;
+}
+
+.validate_def .v_info{
+    display: inline-block;
+    border:1px solid #FFC480;
+    background-color: #FEFFE5;
+    height: 33px;
+    color: #666;
+}
+
+.validate_def .v_ok{
+    display: inline-block;
+    background-color:transparent;
+    background-position: 8px 9px;
+    padding: 0 10px 0 30px;
+}
+
+.validate_def .v_error{
+    background-color: #FFEAEA;
+    background-position: 8px -48px;
+    border: 1px solid #E5C3C4;
+    color: #E43D01;
+    display: inline-block;
+    margin-top: 0;
+    padding: 0 10px 0 30px;
+    text-align: center;
+
+}
