@@ -8,121 +8,47 @@
  * @date: 2013/03/18
  *
  */
-.panel_modal{
-    filter:Alpha(Opacity=0);
-    background: #f00;
-    opacity:0
-}
-.panel_modal_mask{
-    filter:Alpha(Opacity=30);
-    background: #111;
-    opacity:0.4
-}
-.panel_topic {
-    border-top: 1px solid #f7f7f7;
-    border-bottom: 1px solid #b1b1b1;
-    *border-top: 1px solid #f0efef;
-    *border-left: 1px solid #e2e0e0;
-    *border-right: 1px solid #e2e0e0;
-    overflow: hidden;
-    background: #fff;
-    border-radius: 5px;
-    box-shadow: 0 0 3px #999;
-}
-.panel_topic_fixed{
-    position: fixed;
-}
-.panel_topic_mask{
-    box-shadow: 0 0 3px #333;
-    border-bottom: 0;
-    *border-bottom: 1px solid #888;
-    *border-top: 1px solid #bcbbbb;
-    *border-left: 1px solid #b8b7b7;
-    *border-right: 1px solid #b8b7b7;
-}
-
-.panel_topic_title {
-    background: #e5e5e5;
-    border-bottom: 1px solid #dedede;
-    border-radius: 5px 5px 0 0;
-    height: 29px;
-    line-height: 29px;
-    padding: 0 12px;
-    overflow: hidden;
+.panel_topic_content{
+    position: relative;
+    width:970px;
+    height:50px;
     font-size: 13px;
-    font-weight: 700;
-    color: #666;
 }
 
-.panel_topic_close:link, .panel_topic_close:visited {
+.panel_topic_text, .panel_topic_buttom{
     position: absolute;
-    top: 6px;
-    right: 10px;
-    width: 15px;
-    height: 15px;
-    overflow: hidden;
-    cursor: pointer;
-    background: url('http://pages.aifcdn.com/img/afui/panel/icon.png') -93px 4px no-repeat;
-    outline: none;
+    top:10px;
+    left:362px;
+    width:147px;
+    height:30px;
 }
 
-.panel_topic_close:hover {
-    background-position: -93px -20px;
+.panel_topic_text_next{
+    left:600px;
 }
 
-.panel_topic_box {
-    /*border-top: 1px solid #fbfbfb;
-    border-bottom: 1px solid #dddddd;*/
-    background: #f3f3f3;
-    padding: 12px;
-    font-size: 13px;
-    /*text-align: center;*/
-    color:#333;
-}
-
-.panel_topic_footer {
-    clear: both;
-    /*text-align: center;*/
-    height: 43px;
-    /*padding-top: 8px;*/
-    padding: 30px 0 40px 140px;
-    /*border-top: 1px solid #fbfbfb;*/
-    border-radius: 0 0 5px 5px;
-    background: #f3f3f3;
-}
-
-.panel_topic_button:link, .panel_topic_button:visited {
-    display: inline-block;
-    width: 90px;
-    height: 33px;
-    line-height: 33px;
-    text-align: center;
-    background: url('http://pages.aifcdn.com/img/afui/panel/icon.png') 0 0 no-repeat;
-    cursor: pointer;
-    font-size: 13px;
-    color: #6a6a6a;
+.panel_topic a.panel_topic_buttom:link,.panel_topic a.panel_topic_buttom:visited{
+    top:8px;
+    width:104px;
+    height:34px;
+    left:795px;
     text-decoration: none;
-    outline: none;
+    background: #fff;
 }
-
-.panel_topic_button:hover {
-    color: #333
+.panel_topic_info{
+    position: absolute;
+    top:10px;
+    left:516px;
+    color:red;
+    display: block;
+    width:30px;
+    text-align: center;
+    height:30px;
+    line-height: 30px;
+    color:#E43D01;
+    background: #FFEAEA;
+    border:1px solid #E5C3C4;
 }
-
-.panel_topic_ok:link, .panel_topic_ok:visited {
-    color: #333;
-    text-indent: -9999px;
-    background: url('http://pages.aifcdn.com/img/xfdiamond/1/bg_icon.png') 0 0 no-repeat;
-    background: url('http://pages.hqyun.dev.aifcdn.com/img/xfdiamond/1/bg_icon.png') 0 0 no-repeat;
-    width: 127px;
-    height: 40px;
-    overflow: hidden;
-}
-
-.panel_topic_ok_disable:link, .panel_topic_ok_disable:visited, .panel_topic_ok_disable:hover {
-    color: #999 !important;
-}
-
-.panel_topic_ok:hover {
-    color:#111;
+.panel_topic_info_next{
+    left:754px;
 }
