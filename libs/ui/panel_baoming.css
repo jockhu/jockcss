@@ -112,7 +112,7 @@
 .panel_baoming_ok:link, .panel_baoming_ok:visited {
     color: #333;
     background: url('http://pages.aifcdn.com/img/xfdiamond/1/bg_icon.png') 0 0 no-repeat;
-    background: url('http://pages.hqyun.dev.aifcdn.com/img/xfdiamond/1/bg_icon.png') 0 0 no-repeat;
+    /*background: url('http://pages.hqyun.dev.aifcdn.com/img/xfdiamond/1/bg_icon.png') 0 0 no-repeat;*/
     width: 127px;
     height: 40px;
     overflow: hidden;
