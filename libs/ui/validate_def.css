@@ -26,7 +26,7 @@
     color: #666;
 }
 
-.validate_def .v_ok{
+.validate_def .v_success{
     display: inline-block;
     background-color:transparent;
     background-position: 8px 9px;
