@@ -17,11 +17,12 @@
     vertical-align: top;
     padding: 0 10px;
     border-radius: 3px;
+    font-size: 12px;
 }
 
 .validate_def .v_info{
     display: inline-block;
-    border:1px solid #FFC480;
+    border:1px solid #F9DCA7;
     background-color: #FEFFE5;
     color: #666;
 }
@@ -41,6 +42,4 @@
     display: inline-block;
     margin-top: 0;
     padding: 0 10px 0 30px;
-    text-align: center;
-
 }
