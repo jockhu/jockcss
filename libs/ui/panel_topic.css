@@ -10,7 +10,7 @@
  */
 .panel_topic_content{
     position: relative;
-    width:970px;
+    width:1004px;
     height:50px;
     font-size: 13px;
 }
@@ -33,7 +33,7 @@
     height:34px;
     left:795px;
     text-decoration: none;
-    background: #fff;
+    /*background: #fff;*/
 }
 .panel_topic_info{
     position: absolute;
