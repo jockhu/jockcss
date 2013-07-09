@@ -8,9 +8,6 @@
  * @date: 2012/10/11
  *
  */
-.autoMobie{
-    width: 98.6%;
-}
 .autocomplete_m_def {
     border: 1px solid #d9d9d9;
     border-top: 0;
@@ -18,8 +15,7 @@
     cursor: pointer;
     text-align: left;
     overflow: auto;
-    width: 100%!important;
-    height: 400px;
+    width: 98.6%;
 }
 
 .autocomplete_m_def .ui_sel {
