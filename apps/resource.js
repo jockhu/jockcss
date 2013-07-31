@@ -10,8 +10,8 @@ var conf = require("../conf/config"),
     Fs = require("fs"),
     Log = require("./log").Log,
     Utils = require("./utils");
-    try{Utils.extend(conf, require('cssConfig'))}catch(e){}
-
+    if(conf.configPath)
+        try{Utils.extend(conf, require(conf.configPath))}catch(e){}
 /**
  * Resource(request, response)
  *

@@ -15,7 +15,11 @@
  */
 
 
-
+/**
+ * Default config path
+ * @const
+ */
+exports.configPath = '/Users/jock/config/jockcss/config.js';
 
 /**
  * Default port
