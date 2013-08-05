@@ -16,10 +16,10 @@
 
 
 /**
- * Default config path
+ * Default config path, rewrite app conf
  * @const
  */
-exports.configPath = '/Users/jock/config/jockcss/config.js';
+exports.userConfigPath = '~/config/node/config.css';
 
 /**
  * Default port
