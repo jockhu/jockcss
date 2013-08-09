@@ -9,37 +9,40 @@
  *
  * example
  *
- *         node service.js 8000 true  false    20120101
- *                        port debug compress version
+ *         node service.js
  *
  */
 
 
-
+/**
+ * Default config path, rewrite app conf
+ * @const
+ */
+exports.userConfigPath = process.argv[2] || '';
 
 /**
  * Default port
  * @const
  */
-exports.port = process.argv[2] || 8089;
+exports.port = 8089;
 
 /**
  * Default debug
  * @const
  */
-exports.debug = (process.argv[3] != undefined) ? process.argv[3] == 'true' : false;
+exports.debug = true;
 
 /**
  * Default enable compression
  * @const
  */
-exports.enableCompress = (process.argv[4] != undefined) ? process.argv[4] == 'true' : true;
+exports.enableCompress = false;
 
 /**
  * Default version
  * @const
  */
-exports.version = process.argv[5];
+exports.version = '';
 
 /**
  * Default root path
