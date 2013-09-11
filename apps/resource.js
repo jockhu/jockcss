@@ -268,8 +268,7 @@ Resource.prototype.loadResource = function(modules) {
             resFiles.push(this.loadFile( this.getRealFilePath( this.stringToPath( cMod ) ) + '.css' ));
 
     }
-
-    return resFiles.join('');
+    return resFiles.join('').replace(/__CHOST__/g, conf.cssHost || this.getHost() );
 }
 
 /**
