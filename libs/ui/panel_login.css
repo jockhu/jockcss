@@ -1,0 +1,304 @@
+/**
+ * Aifang Css Framework.
+ * Copyright 2012 ANJUKE Inc. All rights reserved.
+ *
+ * @path: ui/panel_def.css
+ * @author: Jock
+ * @version: 1.0.0
+ * @date: 2012/12/05
+ *
+ */
+.panel_modal{
+    filter:Alpha(Opacity=0);
+    background: #fff;
+    opacity:0
+}
+.panel_modal_mask{
+    filter:Alpha(Opacity=30);
+    background: #111;
+    opacity:0.4
+}
+.panel_def {
+    border-top: 1px solid #f7f7f7;
+    border-bottom: 1px solid #b1b1b1;
+    *border-top: 1px solid #f0efef;
+    *border-left: 1px solid #e2e0e0;
+    *border-right: 1px solid #e2e0e0;
+    overflow: hidden;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 3px #999;
+}
+.panel_def_fixed{
+    position: fixed;
+}
+.panel_def_mask{
+    box-shadow: 0 0 3px #333;
+    border-bottom: 0;
+    *border-bottom: 1px solid #888;
+    *border-top: 1px solid #bcbbbb;
+    *border-left: 1px solid #b8b7b7;
+    *border-right: 1px solid #b8b7b7;
+}
+
+.panel_def_title {
+    background: #e5e5e5;
+    border-bottom: 1px solid #dedede;
+    border-radius: 5px 5px 0 0;
+    height: 29px;
+    line-height: 29px;
+    padding: 0 12px;
+    overflow: hidden;
+    font-size: 13px;
+    font-weight: 700;
+    color: #666;
+}
+
+.panel_def_close:link, .panel_def_close:visited {
+    position: absolute;
+    top: 18px;
+    right: 20px;
+    width: 15px;
+    height: 15px;
+    overflow: hidden;
+    cursor: pointer;
+    background: url('http://__CHOST__/img/jockjs_ui/login/big_icon.png') 0px -127px no-repeat;
+    outline: none;
+    z-index: 1;
+}
+
+/*.panel_def_close:hover {*/
+/*background-position: -93px -20px;*/
+/*}*/
+
+.panel_def_box {
+    border-top: 1px solid #fbfbfb;
+    border-bottom: 1px solid #dddddd;
+    background: #d9d9d9;
+    font-size: 13px;
+    color:#333;
+    padding: 11.5px;
+}
+
+.panel_def_footer {
+    clear: both;
+    text-align: center;
+    height: 43px;
+    padding-top: 8px;
+    border-top: 1px solid #fbfbfb;
+    border-radius: 0 0 5px 5px;
+    background: #f3f3f3;
+}
+
+.panel_def_button:link, .panel_def_button:visited {
+    display: inline-block;
+    width: 90px;
+    height: 33px;
+    line-height: 33px;
+    text-align: center;
+    background: url('http://__CHOST__/img/afui/panel/icon.png') 0 0 no-repeat;
+    cursor: pointer;
+    font-size: 13px;
+    color: #6a6a6a;
+    text-decoration: none;
+    outline: none;
+}
+
+.panel_def_button:hover {
+    color: #333
+}
+
+.panel_def_ok:link, .panel_def_ok:visited {
+    color:#333;
+}
+
+.panel_def_ok_disable:link, .panel_def_ok_disable:visited, .panel_def_ok_disable:hover {
+    color: #999 !important;
+}
+
+.panel_def_ok:hover {
+    color:#111;
+}
+
+/*=========================begain======================*/
+.dialog_c{
+    background: #fff;
+    padding: 10px 30px 30px 34px;
+    position: relative;
+    padding-right: 235px;
+}
+.dialog_c .t{
+    font-size: 14px;
+    font-weight: bold;
+    font-family:arial '宋体';
+    height: 33px;
+    line-height: 17px;
+
+}
+.dialog_c .l{
+    border-right: 1px solid #ddd;
+    padding-right: 30px;
+    _letter-spacing:-2px;
+}
+.dialog_c .r{
+    position: absolute;
+    right: 0;
+    top:34px;
+    width: 237px;
+}
+.dialog_c .r .qq{
+    width: 45px;
+    /*margin-left: 33px;*/
+    /* margin-right: 27px;*/
+    padding-top: 45px;
+    /*margin-top: -5px;*/
+    /*margin-left: -8px;*/
+    margin:-5px 27px 0 33px;
+    text-align: center;
+    text-indent: -5px;
+    display: inline-block;
+    background: url('http://__CHOST__/img/jockjs_ui/login/big_icon.png') 0px 0 no-repeat;;
+    line-height: 30px;
+}
+.dialog_c .r .twitter{
+    width: 60px;
+    padding-top: 45px;
+    display: inline-block;
+    background: url('http://__CHOST__/img/jockjs_ui/login/big_icon.png') -48px 0px no-repeat;
+    line-height: 30px;
+}
+.dialog_c .r .qq:link,.dialog_c .r .qq:visited,.dialog_c .r .twitter:link,.dialog_c .r .twitter:visited{
+    color: #999;
+}
+.dialog_c .r .qq:hover,.dialog_c .r .twitter:hover{
+    color: #f60;
+}
+.dialog_c .r .r_t{
+    margin:39px 0 30px 36px;
+    /*_text-indent: -2em;*/
+    letter-spacing: -1px;
+}
+.dialog_c .r .r_c{
+    margin:0 0 0 20px;
+    font-family: arial "\5B8B\4F53";
+    *margin-left:10px;
+}
+
+.dialog_c .tab{
+    margin-bottom: 0px;
+}
+.dialog_c .tab span{
+    border: 1px solid #ccc;
+    width: 85px;
+    line-height: 24px;
+    float: left;
+    background: url('http://__CHOST__/img/jockjs_ui/login/big_icon.png') 0px -86px repeat-x;
+    cursor: pointer;
+    text-align: center;
+    margin-bottom: -1px;
+}
+.dialog_c .tab .on{
+    background-position: 0 -215px;
+    color: #5fa60b;
+    border-bottom: 1px solid #fff;
+
+}
+.dialog_c ul{
+    border-top: 1px solid #ccc;
+    padding-top: 20px;
+}
+.dialog_c li{
+    /*line-height: 30px;*/
+    height: 30px;
+    position: relative;
+    padding-left: 52px;
+}
+.dialog_c label{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 52px;
+    line-height: 30px;
+    text-align: right;
+
+}
+.dialog_c li input{
+    width: 188px;
+    padding-left: 10px;
+    height: 26px;
+    border: 1px solid #ccc;
+}
+
+.v_tooltip {
+    line-height: 26px;
+    height: 26px;
+    vertical-align: top;
+    vertical-align: middle;
+    padding-left: 5px;
+}
+.dialog_c .v_error {
+    color: #fe0100;
+    position: static;
+    line-height: 18px;
+}
+.dialog_c .v_success {
+    background:url("http://pages.anjukestatic.com/img/reg/validation_tip.gif") no-repeat  0px -20px;
+    width: 13px;
+    height: 13px;
+    display: inline-block;
+    margin-left: 5px;
+}
+.dialog_c .btnLogin{
+    width: 108px;
+    line-height: 26px;
+    background: url('http://__CHOST__/img/jockjs_ui/login/big_icon.png') 0px -163px repeat-x;
+    border: none;
+    height: 32px;
+    padding-left: 0;
+    color: #fff;
+    font-size: 14px;
+    vertical-align: top;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/*register style*/
+.register_c li{
+    padding:0 0 0 65px;
+}
+.register_c .li_error{
+    height:25px;
+}
+.register_c li input{
+    padding:4px 0 5px 10px;
+    height:20px;
+    line-height:20px;
+}
+.register_c li .ipt_ckb{
+    width:auto;
+    border:0;
+}
+.register_c .li_code input{
+    width:58px;
+}
+.register_c label{
+    width:65px;
+}
+.register_c li .cik_code{
+    margin:0 0 0 8px;
+    display:inline-block;
+    width:98px;
+    height:21px;
+    line-height:21px;
+    border:1px solid #ccc;
+    text-align:center;
+    cursor: pointer;
+    padding: 0;
+}
+.register_c .li_code img{
+
+}
+div .autocomplete_ajk{
+    border: 1px solid #ccc;
+    border-top: 0;
+}
