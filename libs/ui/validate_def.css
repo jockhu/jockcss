@@ -9,7 +9,7 @@
  *
  */
 .validate_def .v_tooltip{
-    background: url("http://__CHOST__/img/afui/validate/1/icon.png") no-repeat 8px 50px #FFEAEA;
+    background: url("__CHOST__/img/afui/validate/1/icon.png") no-repeat 8px 50px #FFEAEA;
     display: none;
     line-height: 30px;
     height: 30px;
