@@ -243,7 +243,7 @@
     line-height: 18px;
 }
 .dialog_c .v_success {
-    background:url("http://pages.anjukestatic.com/img/reg/validation_tip.gif") no-repeat  0px -20px;
+    background:url("pages.anjukestatic.com/img/reg/validation_tip.gif") no-repeat  0px -20px;
     width: 13px;
     height: 13px;
     display: inline-block;
