@@ -62,7 +62,7 @@
     height: 15px;
     overflow: hidden;
     cursor: pointer;
-    background: url('__CHOST__/img/jockjs_ui/login/big_icon.png') 0px -127px no-repeat;
+    background: url('__CHOST__/img/jui/1/big_icon.png') 0px -127px no-repeat;
     outline: none;
     z-index: 1;
 }
@@ -157,14 +157,14 @@
     text-align: center;
     text-indent: -5px;
     display: inline-block;
-    background: url('__CHOST__/img/jockjs_ui/login/big_icon.png') 0px 0 no-repeat;;
+    background: url('__CHOST__/img/jui/1/big_icon.png') 0px 0 no-repeat;;
     line-height: 30px;
 }
 .dialog_c .r .twitter{
     width: 60px;
     padding-top: 45px;
     display: inline-block;
-    background: url('__CHOST__/img/jockjs_ui/login/big_icon.png') -48px 0px no-repeat;
+    background: url('__CHOST__/img/jui/1/big_icon.png') -48px 0px no-repeat;
     line-height: 30px;
 }
 .dialog_c .r .qq:link,.dialog_c .r .qq:visited,.dialog_c .r .twitter:link,.dialog_c .r .twitter:visited{
@@ -192,7 +192,7 @@
     width: 85px;
     line-height: 24px;
     float: left;
-    background: url('__CHOST__/img/jockjs_ui/login/big_icon.png') 0px -86px repeat-x;
+    background: url('__CHOST__/img/jui/1/big_icon.png') 0px -86px repeat-x;
     cursor: pointer;
     text-align: center;
     margin-bottom: -1px;
@@ -252,7 +252,7 @@
 .dialog_c .btnLogin{
     width: 108px;
     line-height: 26px;
-    background: url('__CHOST__/img/jockjs_ui/login/big_icon.png') 0px -163px repeat-x;
+    background: url('__CHOST__/img/jui/1/big_icon.png') 0px -163px repeat-x;
     border: none;
     height: 32px;
     padding-left: 0;
