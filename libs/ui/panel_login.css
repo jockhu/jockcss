@@ -213,6 +213,7 @@
     /*line-height: 30px;*/
     position: relative;
     padding-left: 52px;
+    width: 230px;
 }
 .dialog_c label{
     position: absolute;
@@ -239,9 +240,16 @@
 }
 .dialog_c .v_error {
     color: #fe0100;
-    position: static;
     line-height: 18px;
+    position: absolute;
+    left: 0;
+     display: block;
+    width: auto;
 }
+.dialog_c #tab_Register .v_error{
+   left: 65px;
+}
+
 .dialog_c .v_success {
     background:url("http://pages.anjukestatic.com/img/reg/validation_tip.gif") no-repeat  0px -20px;
     width: 13px;
@@ -269,6 +277,8 @@
 }
 .register_c .li_error{
     height:25px;
+    overflow: hidden;
+    position: relative;
 }
 .register_c li input{
     padding:4px 0 5px 10px;
@@ -304,4 +314,9 @@ div .autocomplete_ajk{
 }
 .panel_login{
     z-index: 210001!important;
+}
+#info_iptLoginPwd{
+    position: absolute;
+    left: 0px;
+    _margin-left:-5px;
 }
