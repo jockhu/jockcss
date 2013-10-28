@@ -245,6 +245,7 @@
     left: 0;
      display: block;
     width: auto;
+    white-space: nowrap;
 }
 .dialog_c #tab_Register .v_error{
    left: 65px;
@@ -319,4 +320,7 @@ div .autocomplete_ajk{
     position: absolute;
     left: 0px;
     _margin-left:-5px;
+}
+..autocomplete_ajk .ui_item{
+    overflow: hidden;
 }
