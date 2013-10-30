@@ -24,7 +24,6 @@
     *border-top: 1px solid #f0efef;
     *border-left: 1px solid #e2e0e0;
     *border-right: 1px solid #e2e0e0;
-    overflow: hidden;
     background: #fff;
     border-radius: 5px;
     box-shadow: 0 0 3px #999;
@@ -138,7 +137,6 @@
 .dialog_c .l{
     border-right: 1px solid #ddd;
     padding-right: 30px;
-    _letter-spacing:-2px;
 }
 .dialog_c .r{
     position: absolute;
@@ -312,6 +310,7 @@
 div .autocomplete_ajk{
     border: 1px solid #ccc;
     border-top: 0;
+    overflow: auto;
 }
 .panel_login{
     z-index: 210001!important;
@@ -321,6 +320,9 @@ div .autocomplete_ajk{
     left: 0px;
     _margin-left:-5px;
 }
-..autocomplete_ajk .ui_item{
+.autocomplete_ajk .ui_item{
     overflow: hidden;
+}
+#tab_Register #b_tel {
+    height: 56px;
 }
