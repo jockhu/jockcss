@@ -62,7 +62,7 @@
     height: 15px;
     overflow: hidden;
     cursor: pointer;
-    background: url('__CHOST__/img/jui/1/icon.png') -93px 4px no-repeat;
+    background: url('http://pages.anjukestatic.com/img/jui/1/icon.png') -93px 4px no-repeat;
     outline: none;
 }
 
@@ -96,7 +96,7 @@
     height: 33px;
     line-height: 33px;
     text-align: center;
-    background: url('__CHOST__/img/jui/1/icon.png') 0 0 no-repeat;
+    background: url('http://pages.anjukestatic.com/img/jui/1/icon.png') 0 0 no-repeat;
     cursor: pointer;
     font-size: 13px;
     color: #6a6a6a;

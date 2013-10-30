@@ -9,7 +9,7 @@
  *
  */
 .validate_def .v_tooltip{
-    background: url("__CHOST__/img/jui/1/val_icon.png") no-repeat 8px 50px #FFEAEA;
+    background: url("http://pages.anjukestatic.com//img/jui/1/val_icon.png") no-repeat 8px 50px #FFEAEA;
     display: none;
     line-height: 30px;
     height: 30px;
