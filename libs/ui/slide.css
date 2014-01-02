@@ -1,11 +1,13 @@
-.topic_focus{
+.slide_thumb {position:relative;left:15px;top:15px;width:320px;overflow:hidden;}
+
+.slide_thumb .topic_focus{
     width:320px;
     height:240px;
     overflow:hidden;
     position:relative;
 }
 
-.topic_focus_ct{
+.slide_thumb .topic_focus_ct{
     position:absolute;
     left:0px;
     top:0px;
@@ -13,17 +15,17 @@
     height:240px;
 }
 
-.topic_focus_ct .topic_focus_div{
+.slide_thumb .topic_focus_ct .topic_focus_div{
     float:left;
     position:relative;
 }
 
-.topic_focus_tab{
+.slide_thumb .topic_focus_tab{
     text-align:center;
     margin-top:5px;
 }
 
-.topic_focus_tab li{
+.slide_thumb .topic_focus_tab li{
     display:inline-block;
     width:9px;
     height:9px;
@@ -36,11 +38,11 @@
     overflow:hidden;
 }
 
-.topic_focus_tab li.actived{
+.slide_thumb .topic_focus_tab li.actived{
     background: #FF6600;
 }
 
-.topic_focus .left_btn{
+.slide_thumb .topic_focus .left_btn{
     width:26px;
     height:35px;
     position:absolute;
@@ -53,7 +55,7 @@
     cursor:pointer;
 }
 
-.topic_focus .right_btn{
+.slide_thumb .topic_focus .right_btn{
     width:26px;
     height:35px;
     position:absolute;
@@ -66,7 +68,7 @@
     cursor:pointer;
 }
 
-.topic_focus .alpha_c{
+.slide_thumb .topic_focus .alpha_c{
     width:100%;
     height:32px;
     position:absolute;
@@ -77,7 +79,7 @@
     background:#000;
 }
 
-.topic_focus_div .text{
+.slide_thumb .topic_focus_div .text{
     position:absolute;
     width:100%;
     bottom:0px;
