@@ -1,0 +1,91 @@
+.topic_focus{
+    width:320px;
+    height:240px;
+    overflow:hidden;
+    position:relative;
+}
+
+.topic_focus_ct{
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:640px;
+    height:240px;
+}
+
+.topic_focus_ct .topic_focus_div{
+    float:left;
+    position:relative;
+}
+
+.topic_focus_tab{
+    text-align:center;
+    margin-top:5px;
+}
+
+.topic_focus_tab li{
+    display:inline-block;
+    width:9px;
+    height:9px;
+    border-radius:5px;
+    background:#CCCCCC;
+    margin:0px 5px;
+    cursor:pointer;
+    *display:inline;
+    *zoom:1;
+    overflow:hidden;
+}
+
+.topic_focus_tab li.actived{
+    background: #FF6600;
+}
+
+.topic_focus .left_btn{
+    width:26px;
+    height:35px;
+    position:absolute;
+    left:10px;
+    top:50%;
+    margin-top:-17px;
+    opacity:0.7;
+    filter:alpha(opacity=70);
+    background:url('/img/ask/ask_topic/qa_main_focus_icon.png') 0px 0px no-repeat;
+    cursor:pointer;
+}
+
+.topic_focus .right_btn{
+    width:26px;
+    height:35px;
+    position:absolute;
+    right:10px;
+    top:50%;
+    margin-top:-17px;
+    opacity:0.7;
+    filter:alpha(opacity=70);
+    background:url('/img/ask/ask_topic/qa_main_focus_icon.png') 0px -55px no-repeat;
+    cursor:pointer;
+}
+
+.topic_focus .alpha_c{
+    width:100%;
+    height:32px;
+    position:absolute;
+    bottom:0px;
+    left:0px;
+    opacity:0.5;
+    filter:alpha(opacity=50);
+    background:#000;
+}
+
+.topic_focus_div .text{
+    position:absolute;
+    width:100%;
+    bottom:0px;
+    height:32px;
+    left:0;
+    line-height:32px;
+    color:#fff;
+    font-weight:bold;
+    font-size:14px;
+    text-align:center;
+}
