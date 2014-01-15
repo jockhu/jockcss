@@ -38,6 +38,7 @@
     text-decoration: underline;
 }
 .login_info .r .my{
+    width: 83px;
     overflow: hidden;
     display: block;
     background: url("http://pages.anjukestatic.com/img/ajkglobal/4/new_navlogin.png") no-repeat  13px 13px;
