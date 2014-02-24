@@ -455,3 +455,15 @@
     border-top: 1px solid #e1e1e1;
     padding: 0!important;
 }
+
+.R_user .broker_info,.R_user .broker_info a:link,.R_user .broker_info a:visited{
+    color: #fff;
+}
+.R_user .broker_info a:hover{
+    color: #f60;
+}
+.R_user .broker_info{
+    position: relative;
+    top: 12px;;
+}
+
