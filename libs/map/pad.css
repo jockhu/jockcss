@@ -89,7 +89,7 @@
     padding: 0 10px;
 }
 .overlayB .tip{
-    background: url("http://pages.lunjiang.dev.anjuke.com/img/ajkmap/2/tip.png") 0 -353 no-repeat;
+    background: url("http://pages.anjukestatic.com/img/ajkmap/2/tip.png") 0 -353 no-repeat;
     position: absolute;
     left: 7px;
     top:31px;
@@ -123,8 +123,13 @@ html, body {
 *以下为基出样式　ｅｎｄ
 */
 
+
+/*这里是地图提示的样式　begain*/
 .map_tip_loading {
-    position: relative;
+    position: absolute;
+    top:0px;;
+    left: 50%;
+    margin-left: -92.5px;
     padding: 7px 0 7px 0;
     width: 185px;
     height: 30px;
@@ -134,13 +139,116 @@ html, body {
     opacity: 0.7;
     color: #fff;
     line-height: 28px;
-    margin: auto;
 }
 .map_tip_loading .loading_pic {
-    background: url("http://pages.lunjiang.dev.anjuke.com/img/ajkmap/2/ajax-loader.gif") no-repeat;
+    background: url("http://pages.anjukestatic.com/img/ajkmap/2/ajax-loader.gif") no-repeat;
     width: 16px;
     height: 16px;
     vertical-align: middle;
     display: inline-block;
     margin-right: 10px;
+}
+
+.map_change_zoom{
+    line-height: 25px;
+    padding: 10px 0;
+    text-align: center;
+    width: 500px;
+    height: 50px;
+    margin-left: -250px;
+}
+.map_change_zoom .zoom_link:link,.map_change_zoom .zoom_link:hover,.map_change_zoom .zoom_link:visited{
+    color: #f60;
+}
+.map_change_zoom .zoom_link:hover{
+    text-decoration: underline
+}
+.map_change_zoom .iDel{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    filter: Alpha(Opacity=70);
+    opacity: 0.7;
+
+    width: 9px;
+    padding: 3px;
+    line-height: 15px;
+    background: url("http://pages.anjukestatic.com/img/ajkmap/2/bg_map_icons.png") 0 -342px no-repeat;
+    cursor: pointer;
+}
+/*这里是地图提示的样式　end*/
+
+
+
+
+
+
+
+
+
+.pad_view{
+    position: relative;
+}
+#sort_by_price_link,#sort_by_time_link{
+   margin-left: -100%;
+     background: url("http://pages.anjukestatic.com/img/ajkmap/2/bg_map_bar.png") 0 -57px repeat-x;
+    z-index: 1;
+    color: #666;
+}
+#sort_by_price_link.up,#sort_by_price_link.down{
+    color: #f60;
+}
+#sort_by_price_link.up i,#sort_by_time_link.up i{
+    background-position: 0 -118px;
+}
+#sort_by_price_link.down i,#sort_by_time_link.down i{
+    background-position: 0 -145px;
+
+}
+
+
+#sort_by_time_link{
+    left: -53px;
+    position: relative;
+}
+#sort_by_time_link.def{
+    color: #f60
+}
+#p_list .sep {
+    line-height: 23px;
+    background: #efeff4;
+    padding-left: 15px;
+}
+.areaMarkerMain{
+    z-index:1000!important;
+}
+
+.areaMarkerMain i{
+    width: 36px;
+    height: 46px;
+    display: inline-block;
+    background: url("http://pages.anjukestatic.com/img/ajkmap/2/bg_maps.png") -21px -255px no-repeat;
+}
+.areaMarkerMain p{
+    border: 1px solid #f60;
+    color: #f60;
+    padding: 3px 3px;
+    text-align: center;
+    white-space: nowrap;
+    position: relative;
+    margin-left: 36px;
+    left: -50%;
+    background: url("http://pages.anjukestatic.com/img/ajkmap/2/bg_map_bar.png") 0px -140px repeat-x;
+}
+.h_search{
+    display:none;
+}
+@media screen and (orientation:portrait) {
+    .p_filter_result{
+        padding-top: 0px;
+    }
+    #sort_by_price_link,#sort_by_time_link{
+        display: none;
+
+    }
 }
