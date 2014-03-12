@@ -192,7 +192,6 @@ html, body {
 #sort_by_price_link,#sort_by_time_link{
    margin-left: -100%;
      background: url("http://pages.anjukestatic.com/img/ajkmap/2/bg_map_bar.png") 0 -57px repeat-x;
-    z-index: 1;
     color: #666;
 }
 #sort_by_price_link.up,#sort_by_price_link.down{
@@ -239,9 +238,6 @@ html, body {
     margin-left: 36px;
     left: -50%;
     background: url("http://pages.anjukestatic.com/img/ajkmap/2/bg_map_bar.png") 0px -140px repeat-x;
-}
-.h_search{
-    display:none;
 }
 @media screen and (orientation:portrait) {
     .p_filter_result{
