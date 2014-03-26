@@ -224,6 +224,50 @@ html, body {
     background: #efeff4;
     padding-left: 15px;
 }
+.landMask{
+   /* z-index:1000!important;*/
+
+}
+.landMask .tip{
+    background: url('http://pages.anjukestatic.com/img/ajkmap/2/tip.png') 0 0;
+    background-size: 50px;
+    width: 28px;
+    height: 35px;
+    display: inline-block;
+    position: absolute;
+    left: -14px;
+    color: #fff;
+    top: -35px;
+    text-align: center;
+    line-height: 27px;
+}
+.landMask .buble .tip{
+    background-size: 58px;
+    width: 32px;
+    height: 40px;
+}
+
+.landMask .buble p{
+    white-space: nowrap;
+    background: #f60;
+    color: #fff;
+    padding: 3px 5px;
+    display: inline-block;
+    left:-50%;
+    top: -59px;
+    position: relative;
+}
+.landMask p{
+    display: none;
+}
+.filter_condition{
+    border-bottom: 1px solid #62ab00
+}
+.listsort .propBarLeft{
+    border-top: none;
+}
+
+
 .areaMarkerMain{
     z-index:1000!important;
 }
@@ -244,6 +288,9 @@ html, body {
     margin-left: 36px;
     left: -50%;
     background: url("http://pages.anjukestatic.com/img/ajkmap/2/bg_map_bar.png") 0px -139px repeat-x;
+}
+.areaMarkerMain .hideName{
+    display: none;
 }
 @media screen and (orientation:portrait) {
     .p_filter_result{
@@ -270,6 +317,13 @@ body .p_hei{
 .landHover .line{
     display: inline-block;
 }
+.land .landName{
+    white-space: nowrap;
+    background: #f60;
+    color: #fff;
+    padding: 3px 5px;
+    top:-6px;
+}
 .searchOverlay{
     padding-left: 30px;
 }
@@ -289,4 +343,5 @@ body .p_hei{
     background-position: 0 -49px;
     width: 34px;
     top:-19px;
+    height: 44px;
 }
