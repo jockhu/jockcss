@@ -16,7 +16,7 @@
 .OverlayA .circle {
     background: #45a941;
     border-radius: 39px;
-    opacity: 0.8;
+    opacity: 0.75;
     height: 100%;
     border: 1px solid #fff;
 
@@ -87,9 +87,12 @@
     border-radius: 5px;
     white-space: nowrap;
     padding: 0 10px;
+   /* box-shadow: rgb(200, 199, 204) 2px 2px 3px;*/
+    -webkit-box-shadow: rgba(200, 199, 204,0.82) 2px 2px 3px;
+
 }
 .overlayB .tip{
-    background: url("http://pages.anjukestatic.com/img/ajkmap/2/tip.png") 0 -198 no-repeat;
+    background: url("http://pages.anjukestatic.com/img/ajkmap/3/tip.png") 0 -198 no-repeat;
     position: absolute;
     left: 7px;
     top:31px;
@@ -287,7 +290,9 @@ html, body {
     position: relative;
     margin-left: 36px;
     left: -50%;
-    background: url("http://pages.anjukestatic.com/img/ajkmap/2/bg_map_bar.png") 0px -139px repeat-x;
+    /*background: url("http://pages.anjukestatic.com/img/ajkmap/2/bg_map_bar.png") 0px -139px repeat-x;*/
+    background: #f60;
+    color: #fff;
 }
 .areaMarkerMain .hideName{
     display: none;
