@@ -88,7 +88,7 @@
     white-space: nowrap;
     padding: 0 10px;
    /* box-shadow: rgb(200, 199, 204) 2px 2px 3px;*/
-    -webkit-box-shadow: rgba(200, 199, 204,0.82) 2px 2px 3px;
+   /* -webkit-box-shadow: rgba(200, 199, 204,0.82) 2px 2px 3px;*/
 
 }
 .overlayB .tip{
