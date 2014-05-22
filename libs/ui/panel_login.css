@@ -241,7 +241,7 @@
     line-height: 18px;
     position: absolute;
     left: 0;
-     display: block;
+    display: block;
     width: auto;
     white-space: nowrap;
 }
@@ -326,3 +326,45 @@ div .autocomplete_ajk{
 #tab_Register #b_tel {
     height: 56px;
 }
+/*captcha start*/
+/*清浮动*/
+.clearfix:after{content:"";display:block;clear:both;}
+.clearfix{zoom:1;}
+.captcha_text{ 
+  height: 24px;
+  display: block;
+}
+.captcha{
+  height: 36px;
+  line-height: 36px;
+}
+.register_c li input.captcha_txt{
+  width: 58px; 
+  height: 18px;
+  padding: 5px 5px;
+  border: 1px #CCCCCC solid;
+  float: left;
+  margin-right: 10px;
+}
+.captcha_img{
+  display: inline-block;
+  height: 26px;
+  width: 90px;
+  padding-top: 2px;
+  margin-right: 10px;
+  float: left;
+}
+.captcha_click{
+  color: #0041D9;
+  text-decoration:underline;
+  cursor: pointer;
+  line-height: 30px;
+  float: left;
+}
+.captcha_info{
+    color: #fe0100;
+    line-height: 18px;
+    display: block;
+    height: 25px;
+}
+/*captcha end*/
