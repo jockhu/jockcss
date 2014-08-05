@@ -20,8 +20,8 @@
     height: 48px;
     line-height: 48px;
     /*background: url("http://pages.anjukestatic.com/img/ajkglobal/4/bg_icons.png") no-repeat 0 14px;*/
-    background: url("http://pages.benlinhuo.dev.ajkcdn.com/site/img/global/1/header/navigation.png") no-repeat 0 15px;
-    _background: url("http://pages.benlinhuo.dev.ajkcdn.com/site/img/global/1/header/navigation.gif") no-repeat 0 15px;
+    background: url("http://pages.ajkcdn.com/site/img/global/1/header/navigation.png") no-repeat 0 15px;
+    _background: url("http://pages.ajkcdn.com/site/img/global/1/header/navigation.gif") no-repeat 0 15px;
     cursor: pointer;
     margin-right: 12px;
 }
@@ -71,8 +71,8 @@
 }
 
 .login_info .r .my {
-    background: url("http://pages.benlinhuo.dev.ajkcdn.com/site/img/global/1/header/navigation.png") no-repeat 0 -21px;
-    _background: url("http://pages.benlinhuo.dev.ajkcdn.com/site/img/global/1/header/navigation.gif") no-repeat 0 -21px;
+    background: url("http://pages.ajkcdn.com/site/img/global/1/header/navigation.png") no-repeat 0 -21px;
+    _background: url("http://pages.ajkcdn.com/site/img/global/1/header/navigation.gif") no-repeat 0 -21px;
     padding-left: 20px;
     height: 47px;
     line-height: 47px;
@@ -133,8 +133,8 @@
     height: 100px;
     line-height: 100px;
     background: red;
-    background: url("http://pages.benlinhuo.dev.ajkcdn.com/site/img/global/1/header/shopping.png") no-repeat 67px 44px;
-    _background: url("http://pages.benlinhuo.dev.ajkcdn.com/site/img/global/1/header/shopping.gif") no-repeat 67px 44px;
+    background: url("http://pages.ajkcdn.com/site/img/global/1/header/shopping.png") no-repeat 67px 44px;
+    _background: url("http://pages.ajkcdn.com/site/img/global/1/header/shopping.gif") no-repeat 67px 44px;
     padding-left: 130px;
     font-size: 14px;
 }
@@ -210,8 +210,8 @@
 }
 
 .up_down_sc, .up_down_usr {
-    background: url("http://pages.benlinhuo.dev.ajkcdn.com/site/img/global/1/header/navigation.png") no-repeat 0 -195px;
-    _background: url("http://pages.benlinhuo.dev.ajkcdn.com/site/img/global/1/header/navigation.gif") no-repeat 0 -195px;
+    background: url("http://pages.ajkcdn.com/site/img/global/1/header/navigation.png") no-repeat 0 -195px;
+    _background: url("http://pages.ajkcdn.com/site/img/global/1/header/navigation.gif") no-repeat 0 -195px;
     position: absolute;
     top: 19px;
     width: 10px;
