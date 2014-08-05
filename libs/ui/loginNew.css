@@ -136,6 +136,7 @@
     background: url("http://pages.benlinhuo.dev.ajkcdn.com/site/img/global/1/header/shopping.png") no-repeat 67px 44px;
     _background: url("http://pages.benlinhuo.dev.ajkcdn.com/site/img/global/1/header/shopping.gif") no-repeat 67px 44px;
     padding-left: 130px;
+    font-size: 14px;
 }
 
 .login_info .m_l .li_a img{
@@ -234,7 +235,8 @@
     background-color: #f9f9f9;
     font-size: 12px;
     border-radius: 0 0 4px 4px;
-    box-shadow: 2px 2px 4px #EAEAEA, -2px 2px 4px #EAEAEA;
+    box-shadow: 2px 1px 4px #e1e1e1, -2px 1px 4px #e1e1e1;
+    font-size: 14px;
 }
 
 .o_b li {
