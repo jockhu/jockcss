@@ -130,13 +130,13 @@
 }
 
 .login_info .m_l .empty {
+    font-size: 14px;
     height: 100px;
     line-height: 100px;
     background: red;
     background: url("http://pages.ajkcdn.com/site/img/global/1/header/shopping.png") no-repeat 67px 44px;
     _background: url("http://pages.ajkcdn.com/site/img/global/1/header/shopping.gif") no-repeat 67px 44px;
     padding-left: 130px;
-    font-size: 14px;
 }
 
 .login_info .m_l .li_a img{
@@ -228,6 +228,7 @@
 
 /*登录注册*/
 .o_b {
+    font-size: 14px;
     position: absolute;
     left: 0;
     top: 48px;
@@ -235,7 +236,6 @@
     background-color: #f9f9f9;
     border-radius: 0 0 4px 4px;
     box-shadow: 2px 1px 4px #e1e1e1, -2px 1px 4px #e1e1e1;
-    font-size: 14px;
 }
 
 .o_b li {
