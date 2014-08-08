@@ -39,6 +39,22 @@
     position: relative;
 }
 
+.u_l, .u_r {
+    font-size: 14px;
+}
+
+.u_l {
+    margin-left: 31px;
+    margin-right: 5px;
+}
+
+.u_l:link, .u_l:visited, .u_l:active, .u_l:hover,
+.u_r:link, .u_r:visited, .u_r:active, .u_r:hover
+{
+    color: #ffffff;
+    text-decoration: none;
+}
+
 .usr, .my {
     font-size: 14px;
 }
