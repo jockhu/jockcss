@@ -12,7 +12,7 @@
 
 .login_info .l {
     float: left;
-    width: 127px;
+    width: 119px;
     padding-left: 10px;
 }
 
@@ -28,7 +28,7 @@
 
 .login_info .l .o_b {
     padding-bottom: 15px;
-    width: 135px;
+    width: 127px;
 }
 .login_info .l .o_b a {
     font-size: 14px;
@@ -48,7 +48,7 @@
 }
 
 .u_l {
-    margin-left: 31px;
+    margin-left: 23px;
     margin-right: 5px;
 }
 
@@ -244,7 +244,7 @@
 }
 
 .up_down_usr {
-    left: 122px;
+    left: 114px;
 }
 
 /*登录注册*/
@@ -287,3 +287,4 @@
 .o_b .exit .exit:hover {
     color: #528e01;
 }
+
