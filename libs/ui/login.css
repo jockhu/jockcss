@@ -122,7 +122,8 @@
     padding-right: 9px;
     border-radius: 0 0 4px 4px;
     border: 1px solid #d8d8d8;
-    box-shadow: 2px 2px 4px #EAEAEA, -2px 2px 4px #EAEAEA;
+    /*box-shadow: 2px 2px 4px #EAEAEA, -2px 2px 4px #EAEAEA;*/
+    /*box-shadow: 2px 2px 4px #EAEAEA, -2px 2px 4px #EAEAEA;*/
 }
 
 .login_info .m_l .t {
@@ -256,7 +257,7 @@
     border: 1px solid #d8d8d8;
     background-color: #f9f9f9;
     border-radius: 0 0 4px 4px;
-    box-shadow: 2px 1px 4px #e1e1e1, -2px 1px 4px #e1e1e1;
+    /*box-shadow: 2px 1px 4px #e1e1e1, -2px 1px 4px #e1e1e1;*/
 }
 
 .o_b li {
