@@ -85,30 +85,47 @@
     *display: inline;
     *zoom: 1;
     _width: 100px;
+    vertical-align: top;
 }
 
 .custom-login .list{
     width: 135px;
     margin-left: -58px;
+    _margin-left: -125px;
 }
 .custom-login .list li{
 }
 .user-login .title{
     padding-left: 20px;
+    _width: 110px;
     background: url(http://pages.wenjinyang.dev.ajkcdn.com/site/img/global/2/navigationx8.png) no-repeat 0 0;
+}
+.user-login .title a.u_l{
+    _width: 60px;
+}
+.user-login .title a.u_r{
+    _width: 30px;
 }
 .user-login .list{
     width: 135px;
     margin-left: -8px;
+    _margin-top: 0px;
+    _margin-left: -95px;
 }
 .favorite .title{
     /*width: 103px;*/
     padding-left: 20px;
+    _width: 100px;
     background: url(http://pages.wenjinyang.dev.ajkcdn.com/site/img/global/2/navigationx8.png) no-repeat 0 -39px;
+}
+.favorite .title .my{
+    _width: 85px;
 }
 .favorite .list{
     width: 395px;
-    margin-left: -272px;/*-292px*/
+    margin-left: -289px;/*-272px;*//*-292px*/
+    _margin-top: 0px;
+    _margin-left: -373px;
 }
 .dropdown.favorite{
     padding-right: 0;
