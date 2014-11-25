@@ -65,6 +65,7 @@
     *zoom: 1;
     margin-top: 5px;
     vertical-align: top;
+    margin-left: 10px;
 }
 
 .arrow-up,
@@ -93,11 +94,13 @@
     margin-left: -58px;
     _margin-left: -125px;
 }
-.custom-login .list li{
+.custom-login .title a{
+    _width: 60px;
 }
+
 .user-login .title{
     padding-left: 20px;
-    _width: 110px;
+    _width: 120px;
     background: url(http://pages.wenjinyang.dev.ajkcdn.com/site/img/global/2/navigationx8.png) no-repeat 0 0;
 }
 .user-login .title a.u_l{
@@ -110,25 +113,51 @@
     width: 135px;
     margin-left: -8px;
     _margin-top: 0px;
-    _margin-left: -95px;
+    _margin-left: -85px;
+}
+.user-login .list .z_count{
+    margin-left: 5px;
+    color: #f60;
 }
 .favorite .title{
     /*width: 103px;*/
     padding-left: 20px;
-    _width: 100px;
+    _width: 110px;
     background: url(http://pages.wenjinyang.dev.ajkcdn.com/site/img/global/2/navigationx8.png) no-repeat 0 -39px;
 }
 .favorite .title .my{
-    _width: 85px;
+    _width: 82px;
 }
 .favorite .list{
-    width: 395px;
+    width: 405px;
     margin-left: -289px;/*-272px;*//*-292px*/
     _margin-top: 0px;
     _margin-left: -373px;
 }
+.favorite .list .m_l{
+    padding: 0 9px 0 11px;
+}
+.favorite .li_r a:link,
+.favorite .li_r a:visited{
+    color: #1B519F;
+}
+.favorite .li_r a:hover{
+    color: #f60;
+}
+.favorite .li_r a:active{
+    color: #1B519F;
+}
+
 .dropdown.favorite{
     padding-right: 0;
+}
+.dropdown.favorite .list .nav_count{
+    border-top: 1px solid #ccc;
+}
+.dropdown.favorite .list,
+.dropdown.favorite .li_c a{
+    font-size: 12px;
+    color: #333;
 }
 .dropdown .list .hr{
     border-top: 1px solid #CCCCCC;
@@ -318,47 +347,3 @@
 
 /*登录注册*/
 
-/*
-.dropdown .list {
-    font-size: 14px;
-    position: absolute;
-    top: 48px;
-    border: 1px solid #d8d8d8;
-    background-color: #f9f9f9;
-    border-radius: 0 0 4px 4px;
-}
-
-.dropdown .list li {
-    margin: 15px 20px 0 10px;
-    padding-left: 16px;
-}
-
-.dropdown .list li a:link,
-.dropdown .list li a:visited,
-.dropdown .list li a:active {
-    color: #666666;
-    text-decoration: none;
-}
-
-.dropdown .list li a:hover {
-    color: #528e01;
-    text-decoration: none;
-}
-
-.sep {
-    border-top: 1px solid #CCCCCC;
-    line-height: 0 !important;
-    height: 0;
-}
-
-.dropdown .list .exit .exit:link,
-.dropdown .list .exit .exit:visited,
-.dropdown .list .exit .exit:active {
-    color: #999999;
-}
-
-.dropdown .list .exit .exit:hover {
-    color: #528e01;
-}
-*/
-/* END - copy */
