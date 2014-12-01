@@ -70,10 +70,10 @@
 
 .arrow-up,
 .hover .arrow-down{
-    background: url(http://pages.wenjinyang.dev.ajkcdn.com/site/img/global/2/navigationx8.png) no-repeat -2px -30px;
+    background: url(http://pages.ajkcdn.com/site/img/global/2/navigationx8.png) no-repeat -2px -30px;
 }
 .arrow-down{
-    background: url(http://pages.wenjinyang.dev.ajkcdn.com/site/img/global/2/navigationx8.png) no-repeat -2px -20px;
+    background: url(http://pages.ajkcdn.com/site/img/global/2/navigationx8.png) no-repeat -2px -20px;
 }
 .dropdown.menu,
 .custom-login,
@@ -91,7 +91,7 @@
 
 .custom-login .list{
     width: 135px;
-    margin-left: -58px;
+    margin-left: -34px;
     _margin-left: -125px;
 }
 .custom-login .title a{
@@ -101,7 +101,7 @@
 .user-login .title{
     padding-left: 20px;
     _width: 120px;
-    background: url(http://pages.wenjinyang.dev.ajkcdn.com/site/img/global/2/navigationx8.png) no-repeat 0 0;
+    background: url(http://pages.ajkcdn.com/site/img/global/2/navigationx8.png) no-repeat 0 0;
 }
 .user-login .title a.u_l{
     _width: 60px;
@@ -123,7 +123,7 @@
     /*width: 103px;*/
     padding-left: 20px;
     _width: 110px;
-    background: url(http://pages.wenjinyang.dev.ajkcdn.com/site/img/global/2/navigationx8.png) no-repeat 0 -39px;
+    background: url(http://pages.ajkcdn.com/site/img/global/2/navigationx8.png) no-repeat 0 -39px;
 }
 .favorite .title .my{
     _width: 82px;
