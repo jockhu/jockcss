@@ -2,6 +2,7 @@
     font-size: 13px;
     color: #666;
     padding: 0 10px;
+    _padding: 0 5px;
     border-right: 1px solid #ddd;
 }
 .dropdown.last-child,
@@ -38,11 +39,11 @@
     height: 20px;
     line-height: 20px;
 }
-.dropdown .title a{
+.dropdown .title a, .name {
     height: 20px;/*TODO::*/
     line-height: 20px;/*TODO::*/
     max-width: 100px;
-    _width: 80px;
+    _width: 105px;
     display: inline-block;
     *display: inline;
     *zoom: 1;
@@ -51,7 +52,9 @@
     white-space: nowrap;
     text-align: left;
 }
-
+.dropdown .title a.ie6 {
+    _width: 75px;
+}
 /* icon */
 .arrow-up,
 .arrow-down{
@@ -85,17 +88,20 @@
     display: inline-block;
     *display: inline;
     *zoom: 1;
-    _width: 100px;
+    _width: 110px;
     vertical-align: top;
 }
-
+.broker-login {
+    _width:300px;
+}
 .custom-login .list{
     width: 135px;
+    _width: 145px;
     margin-left: -34px;
-    _margin-left: -125px;
+    _margin-left: -135px;
 }
 .custom-login .title a{
-    _width: 60px;
+    _width: 80px;
 }
 
 .user-login .title{
@@ -113,11 +119,12 @@
     width: 135px;
     margin-left: -8px;
     _margin-top: 0px;
-    _margin-left: -85px;
+    _margin-left: -110px;
 }
 .user-login .list .z_count{
     margin-left: 5px;
     color: #f60;
+    _width: 30px;
 }
 .favorite .title{
     /*width: 103px;*/
@@ -126,7 +133,7 @@
     background: url(http://pages.ajkcdn.com/site/img/global/2/navigationx8.png) no-repeat 0 -39px;
 }
 .favorite .title .my{
-    _width: 82px;
+    _width: 84px;
 }
 .favorite .list{
     width: 405px;
@@ -194,6 +201,8 @@
 }
 .broker-login .title span.text{
     margin-left: 10px;
+    _margin-left: 0px;
+    _width: 30px;
 }
 
 
