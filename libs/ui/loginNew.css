@@ -15,7 +15,6 @@
     z-index: 99;
     line-height: normal;/* to fix bug */
     font-weight: normal;/* to fix bug */
-    top: 45px;
 }
 .dropdown .list a{/* to fix bug*/
     padding: 0;
@@ -25,6 +24,7 @@
     border: 1px solid #D6D6D6;
     background-color: #F7F7F7;
     border-radius: 0 0 4px 4px;
+    margin: 11px 0 0 0;
     padding: 0 10px 15px 23px;
     border-top: 0;
 }
@@ -118,7 +118,7 @@
 .user-login .list{
     width: 135px;
     margin-left: -8px;
-    _margin-top: -18px;
+    _margin-top: 0;
     _margin-left: -110px;
 }
 .user-login .list .z_count{
@@ -355,4 +355,3 @@
 }
 
 /*登录注册*/
-
