@@ -1,0 +1,357 @@
+.dropdown{
+    font-size: 13px;
+    color: #666;
+    padding: 0 10px;
+    _padding: 0 5px;
+    border-right: 1px solid #ddd;
+}
+.dropdown.last-child,
+.dropdown:last-child{
+    border-right: 0;
+}
+.dropdown .list{
+    position: absolute;
+    text-align: left;
+    z-index: 99;
+    line-height: normal;/* to fix bug */
+    font-weight: normal;/* to fix bug */
+}
+.dropdown .list a{/* to fix bug*/
+    padding: 0;
+    margin: 0;
+}
+.dropdown .list ul{
+    border: 1px solid #D6D6D6;
+    background-color: #F7F7F7;
+    border-radius: 0 0 4px 4px;
+    margin: 11px 0 0 0;
+    padding: 0 10px 15px 23px;
+    border-top: 0;
+}
+.dropdown .list li{
+    padding-top: 15px;
+    height: auto;/* to fix bug */
+    border: 0;/* to fix bug */
+    font-family: "Microsoft YaHei", "微软雅黑","Hiragino Sans GB", tahoma, arial, simhei;
+}
+/* TODO::refine  */
+.dropdown .title{
+    height: 20px;
+    line-height: 20px;
+}
+.dropdown .title a, .name {
+    height: 20px;/*TODO::*/
+    line-height: 20px;/*TODO::*/
+    max-width: 100px;
+    _width: 105px;
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-align: left;
+}
+.dropdown .title a.ie6 {
+    _width: 75px;
+}
+/* icon */
+.arrow-up,
+.arrow-down{
+    width: 10px;
+    height: 10px;
+    line-height: 10px;
+    display: inline-block;
+    *vertical-align: top;
+    overflow: hidden;
+    *display: inline;
+    *zoom: 1;
+    margin-top: 5px;
+    vertical-align: top;
+    margin-left: 10px;
+}
+
+.arrow-up,
+.hover .arrow-down{
+    background: url(http://pages.ajkcdn.com/site/img/global/2/navigationx8.png) no-repeat -2px -30px;
+}
+.arrow-down{
+    background: url(http://pages.ajkcdn.com/site/img/global/2/navigationx8.png) no-repeat -2px -20px;
+}
+.dropdown.menu,
+.custom-login,
+.user-login,
+.favorite,
+.developer-login,
+.broker-login,
+.notification{
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    _width: 110px;
+    vertical-align: top;
+}
+.broker-login {
+    _width:300px;
+}
+.custom-login .list{
+    width: 135px;
+    _width: 145px;
+    margin-left: -34px;
+    _margin-left: -135px;
+}
+.custom-login .title a{
+    _width: 80px;
+}
+
+.user-login .title{
+    padding-left: 20px;
+    _width: 120px;
+    background: url(http://pages.ajkcdn.com/site/img/global/2/navigationx8.png) no-repeat 0 0;
+}
+.user-login .title a.u_l{
+    _width: 60px;
+}
+.user-login .title a.u_r{
+    _width: 30px;
+}
+.user-login .list{
+    width: 135px;
+    margin-left: -8px;
+    _margin-top: 0;
+    _margin-left: -110px;
+}
+.user-login .list .z_count{
+    margin-left: 5px;
+    color: #f60;
+    _width: 30px;
+}
+.favorite .title{
+    /*width: 103px;*/
+    padding-left: 20px;
+    _width: 110px;
+    background: url(http://pages.ajkcdn.com/site/img/global/2/navigationx8.png) no-repeat 0 -39px;
+}
+.favorite .title .my{
+    _width: 84px;
+}
+.favorite .list{
+    width: 405px;
+    margin-left: -289px;/*-272px;*//*-292px*/
+    _margin-top: 0px;
+    _margin-left: -373px;
+}
+.favorite .list .m_l{
+    padding: 0 9px 0 11px;
+}
+.favorite .li_r a:link,
+.favorite .li_r a:visited{
+    color: #1B519F;
+}
+.favorite .li_r a:hover{
+    color: #f60;
+}
+.favorite .li_r a:active{
+    color: #1B519F;
+}
+
+.dropdown.favorite{
+    padding-right: 0;
+}
+.dropdown.favorite .list .nav_count{
+    border-top: 1px solid #ccc;
+}
+.dropdown.favorite .list,
+.dropdown.favorite .li_c a{
+    font-size: 12px;
+    color: #333;
+}
+.dropdown .list .hr{
+    border-top: 1px solid #CCCCCC;
+    line-height: 0 !important;
+    height: 0;
+    margin-top: 15px;
+    padding-top: 0;
+    margin-left: -15px;
+}
+
+.broker-login .title,
+.developer-login .title{
+    /*width: 150px;*/
+}
+.broker-login .title span,
+.developer-login .title span{
+    display: inline-block;
+    overflow: hidden;
+    *display: inline;
+    *zoom: 1;
+}
+.broker-login .title .exit,
+.developer-login .title .exit{
+    margin-left: 10px;
+}
+.broker-login .title .z_count,
+.notification .title .z_count{
+    margin-left: 10px;
+    color: #fff;
+    background: #FF6600;
+    border-radius: 100%;
+    padding: 0px 5px;
+    display: inline-block;
+}
+.broker-login .title span.text{
+    margin-left: 10px;
+    _margin-left: 0px;
+    _width: 30px;
+}
+
+
+/* START - copy from login.css */
+
+/* 收藏夹 */
+.login_info .li_c a{
+    display: block;
+}
+
+.login_info .m_l .active{
+    background: #EBEBEB;
+    cursor: pointer;
+}
+/*
+.login_info .r .m_l {
+    background-color: #f9f9f9;
+    position: absolute;
+    right: 0;
+    _right: -1px;
+    top: 47px;
+    width: 380px;
+    padding-left: 11px;
+    padding-right: 9px;
+    border-radius: 0 0 4px 4px;
+    border: 1px solid #d8d8d8;
+
+}
+*/
+.login_info .m_l .t {
+    height: 27px;
+    vertical-align: bottom;
+    color: #999;
+    padding: 0;
+    line-height: 38px;
+    overflow: hidden;
+}
+
+.login_info .m_l li {
+    height: 34px;
+    position: relative;
+    padding: 10px 0;
+    text-align: left;
+}
+
+.login_info .nav_count {
+    display: block;
+    text-align: right !important;
+    line-height: 30px;
+    border-top: 1px solid #ccc;
+    padding: 0 !important;
+}
+
+.login_info .m_l .empty {
+    font-size: 14px;
+    height: 100px;
+    line-height: 100px;
+    background: red;
+    background: url("http://pages.ajkcdn.com/site/img/global/1/header/shopping.png") no-repeat 67px 44px;
+    _background: url("http://pages.ajkcdn.com/site/img/global/1/header/shopping.gif") no-repeat 67px 44px;
+    padding-left: 130px;
+}
+
+.login_info .m_l .li_a img{
+    width: 45px;
+    height: 34px;
+}
+
+.login_info .r .m_l a {
+    line-height: 23px;
+    text-align: left;
+}
+
+.login_info .m_l .li_c {
+    margin-top: -4px;
+    padding-left: 50px;
+}
+
+.login_info .li_r {
+    position: absolute;
+    right: 0;
+    top: 10px;
+    text-align: right;
+}
+
+.login_info .li_r em {
+    color: #f60;
+    font-weight: 700;
+    display: block;
+}
+.login_info .m_l .li_a{
+    display: inline-block;
+    width: 45px;
+    height: 34px;
+    position: absolute;
+    left:0;
+    top: 12px;
+}
+
+.li_c a:link, .li_c a:visited, .li_c a:active {
+    color: #333;
+}
+
+.li_c a:hover {
+    color: #f60;
+}
+
+.login_info .m_l .li_c div {
+    color: #999;
+}
+
+.li_r a:link, .li_r a:visited, .li_r a:active {
+    color: #1B519F;
+}
+
+.li_r a:hover {
+    color: #f60;
+}
+
+.login_info .m_l .li_btn {
+    float: right;
+    background: url("http://pages.anjukestatic.com/img/ajkglobal/4/button.gif") no-repeat 0 0px;
+    width: 98px;
+    height: 23px;
+    line-height: 23px;
+    padding-left: 0 !important;
+    text-align: center !important;
+}
+
+.m_l .li_btn:link, .m_l .li_btn:visited, .m_l .li_btn:active, .m_l .li_btn:hover {
+    color: #ffffff;
+}
+
+
+.up_down_sc, .up_down_usr {
+    background: url("http://pages.ajkcdn.com/site/img/global/1/header/navigation.png") no-repeat 0 -195px;
+    _background: url("http://pages.ajkcdn.com/site/img/global/1/header/navigation.gif") no-repeat 0 -195px;
+    position: absolute;
+    top: 19px;
+    width: 10px;
+    height: 10px;
+}
+
+.up_down_sc {
+    right: 10px;
+}
+
+.up_down_usr {
+    left: 114px;
+}
+
+/*登录注册*/
